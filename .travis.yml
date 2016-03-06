@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.12'
+- '4.1'
+before_install: npm install -g gulp
+install: npm install
+before_script: gulp lint
+script: gulp test
+before_deploy: gulp package
+deploy:
+  provider: releases
+  api_key:
+    secure: jVWaTMpGWxgiEE0nijqx5w25dzmiCjaz6Tq18HCdJzjAKzrRMKTQK18AJ4eQhJ5FpSIDGCyc/vfMR9Jibkp6bI0mxn5vPzUysxf8brweaGU+zCoxOlVXqUXIc+nGCT4zJwBHQzjCOWw7Dp4ww0uiKKnmoJiEOySl7F1/N7jNVrQnUhze373wErtd5Jy+txRnWVERQYjHaX61IxSilw/lESlbva6os+01+wwRlfxyT1NMXSyiLFtr9FuevBOsL5zDz3FHMzZIG/EJGzmqhcRcM7DyqxaQA+5PxLTSVpNxE+PFaQe5RC6+Oti8d7OL3+lphWcljSSEMZr1ybBYEdgEPBlrsX+AvZmRdyFf5uL6dakN2/wNUhAvQOk9OXMWWVjV+pMQ9tGCCczR6LkNgNXO1FB/UXCpTlR9SA1p2oU461bl5EzGfvEpaYHjdMPMZLBf8iHHHGkm3BHMQEkU1pNAs/6eyjGf6UeVeCjknQWCOL83de5vOh32I+iKe7uTpbhRNsN2pd+DM3QYJN3ee9UpuvY6AvuwA/jaYlP+sny1SaQqWvUctLeGxD1PA/vn/d50j1vi4Gug8/UdN77khwRd5WlUqVZsT2E75brgiJX+nW8KpRCpk0vFhJ6pTiRiyTgbfvuxNFjPua32vIgc6ZH6CJ1yUcf69g26wy7umGueQGs=
+  file: tmp/release.tar.gz
+  on:
+    repo: j3lte/secretsexchangejs
+after_success:
+- gulp coveralls

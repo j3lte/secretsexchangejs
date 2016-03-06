@@ -1,7 +1,8 @@
-node_modules/
-dist/*
-typings/*
-
-*.log
-
-*DS_Store*
+node_modules
+.idea
+.settings
+.vscode
+dist
+tmp
+coverage
+src/.env

@@ -1,4 +1,4 @@
-Secrets exchanger
+Secrets exchange JS
 =====================
 
 This project is basically a copy of [SecretSexChange](https://github.com/Achiel/SecretSexChange/), written in TypeScript.

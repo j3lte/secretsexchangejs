@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  center
+    if secret
+        p 
+            ="Your secret is:"
+            .secret= secret
+        Note that you will only be able to view this secret once. The next time you visit this page the secret will not be shown
+    else
+        p
+            That secret doesn't exist (anymore). If you are sure that this URL should be valid, notify the person you have received the link from. A third party may have intercepted the secret.
+    

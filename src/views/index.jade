@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  center
+    p Welcome to the secure secret exchange app
+    form(action='/create',method='post')
+        input(id='secret',type='text',autocomplete='off',name='secret')
+        br
+        input(type='submit',value='create plz',class='submit')
+    hr(color="#bbb")
+    i or
+    br
+    hr(color="#bbb")
+    a(href="/generate") generate random
+    

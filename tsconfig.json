@@ -1,0 +1,53 @@
+{
+    "version": "1.6.2",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "outDir": "dist",
+        "sourceMap": true
+    },
+    "filesGlob": [
+        "src/controllers/*.ts",
+        "src/services/*.ts",
+        "src/routes/*.ts",
+        "src/**/*.ts",
+        "typings/**/*.ts",
+        "gulp/**/*.ts",
+        "!./node_modules/**/*.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    },
+    "files": [
+        "src/controllers/index.ts",
+        "src/controllers/store.ts",
+        "src/services/errorHandler.ts",
+        "src/services/redisHandler.ts",
+        "src/services/secretHandler.ts",
+        "src/routes/create.ts",
+        "src/routes/generate.ts",
+        "src/routes/get.ts",
+        "src/routes/index.ts",
+        "src/app.ts",
+        "src/server.ts",
+        "typings/body-parser/body-parser.d.ts",
+        "typings/cookie-parser/cookie-parser.d.ts",
+        "typings/debug/debug.d.ts",
+        "typings/dotenv/dotenv.d.ts",
+        "typings/express/express.d.ts",
+        "typings/gulp/gulp.d.ts",
+        "typings/jasmine/jasmine.d.ts",
+        "typings/mime/mime.d.ts",
+        "typings/morgan/morgan.d.ts",
+        "typings/node/node.d.ts",
+        "typings/redis/redis.d.ts",
+        "typings/serve-favicon/serve-favicon.d.ts",
+        "typings/serve-static/serve-static.d.ts",
+        "typings/superagent/superagent.d.ts",
+        "typings/supertest/supertest.d.ts",
+        "typings/tsd.d.ts"
+    ]
+}

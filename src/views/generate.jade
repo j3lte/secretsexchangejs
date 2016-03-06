@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  center
+    p Thank you for using our secret exchange to generate a secure secret.
+    br
+    ='Your secret:' 
+    .secret= generated
+    p is stored at
+    .secret_url= secret_url
+    

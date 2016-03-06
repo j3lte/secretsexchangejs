@@ -83,5 +83,5 @@ such as for example
 `docker exec myRunningServer pm2 show 0`
 
 
-[travis-url]: https://travis-ci.org/inakianduaga/node-express-boilerplate
-[travis-image]: https://travis-ci.org/inakianduaga/node-express-boilerplate.svg?branch=master
+[travis-url]: https://travis-ci.org/j3lte/secretsexchangejs
+[travis-image]: https://travis-ci.org/j3lte/secretsechangejs.svg?branch=master

@@ -30,9 +30,10 @@
     "express": "^4.13.3",
     "jade": "^1.11.0",
     "morgan": "^1.6.1",
-    "pm2": "^1.0.0",
+    "pm2": "^2.1.6",
     "redis": "^2.4.2",
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0",
+    "snyk": "^1.30.1"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -67,5 +68,10 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
